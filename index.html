@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rexDelivers">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rex's Delivery Service</title>
+
+    <!-- Google Font - Open Sans -->
+    <link async href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Bootstrap CDN 3.3.7 -->
+    <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Angular CDN 1.6.5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+
+    <!-- Angular UI Router CDN 0.4.2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR CODE GOES HERE -->
+    <div class="custom-nav">
+        <ul class="custom-nav-items">
+            <li class="nav-item-home"><a ui-sref="index">Rex's Delivery Service</a></li>
+            <li class="nav-item-options">mood or human options go here</li>
+            <li class="nav-item-shoppingcart">shopping cart</li>
+            <!-- <li><a ui-sref="pokemons">Pokemon</a></li> -->
+        </ul>
+    </div>
+
+    <!-- TAGLINE, Step 1 GOES HERE -->
+    <div class="container-fluid">
+        <h1> Delivering surprises in minutes. </h1>
+
+        <p>
+            <img src="https://lh3.googleusercontent.com/mfJpMEFzJnAjxE1Pmg4998nFhaZL0Rv6a4pnIlgtmzgyKvDHM03YixCj4o4IoryzVW6Ltec=s114"
+                class="Rex" alt="picture">
+            <h4>Bark bark bark! I'm Rex and I run a gift delivery service with my furry friends.</h4>
+                
+        </p>
+
+        <div class="options">
+
+            <h4> Choose a gift based off of your mood or for a particular human..
+                <br><br>
+                <div class="row">
+                    <div class="col-xs-6">
+                        Mood
+                        <img src="https://cdn.dribbble.com/users/120207/screenshots/1311581/jake.png" class="img-thumbnail" alt="Responsive image">
+
+                    </div>
+
+                    <div class="col-xs-6">
+                        Particular human
+                        <img src="https://cdn.dribbble.com/users/31752/screenshots/3651124/diversity.jpg" class="img-thumbnail" alt="Responsive image">
+            </h4>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- FOOTER.... -->
+    <div class="footer">
+
+        My human made this possible: <a href="https://www.linkedin.com/in/darlenekim/">Darlene Kim</a> but we animals run
+        it! Articles and gift giving advice and paid advertisement goes here.... :)
+    </div>
+
+    <div ui-view></div>
+
+    <!-- Module -->
+    <script type="text/javascript" src="./app.js"></script>
+
+    <!-- Services -->
+    <!-- <script type="text/javascript" src="./services/deliveryService.js"></script> -->
+
+    <!-- Controllers -->
+    <!-- <script type="text/javascript" src="./controllers/deliveryController.js"></script> -->
+        <script type="text/javascript" src="./controllers/indexcontroller.js"></script>
+
+
+</body>
+
+</html>
