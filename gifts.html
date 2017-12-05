@@ -1,0 +1,45 @@
+<div class="container">
+
+                <table id="searchGiftTag">
+                
+                <tr ng-repeat="gift in giftss | filter:searchGift">
+                <td>{{ gift.name }}</td>
+                <td>{{ gift.image }}</td>
+                </tr>
+                
+                </table>
+
+
+        <div ng-repeat="gift in gifts">
+                <div class="col-sm-3">
+                <article class="col-item">
+                <div class="photo">
+                <div class="options-cart-round">
+
+        
+                
+                <img src="{{ gift.image }}" class="img-responsive" alt="Product Image" />
+                </div>
+                <div class="info">
+                <div class="row"> 
+                <div class="price-details col-md-6">
+                <p class="details">{{ gift.name }} 
+                </p>
+                                                   
+                <span class="price-new">{{ gift.price }}</span>
+                <button type="button" class="btn btn-default" aria-label="">
+  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+</button>
+                </div>
+                </div>
+                </div>
+                </article>
+                </div>
+
+
+
+
+        </div>
+</div>
+<!-- wrap this in the box model  -->
+
