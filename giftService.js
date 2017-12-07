@@ -21,7 +21,6 @@ app.service("giftService", function ($http) {
         "Florals packed and presented in the most gorgeous way and in European fashion.", 50, "Make anyone feel amazing!", "flowers", "http://www.lovethispic.com/uploaded_images/298910-Venus-Et-Fleur.jpg"))
     gifts[0].tag.push("In Love", "Celebration", "Good Vibes", "Sympathy", "I'm Sorry", "Friends", "Family", "Him", "Her")
 
-
     gifts.push(new Gift(giftId++, "Balloons",
         "Made of latex.", 1.25, "Balloons ordered in odd numbers look best", "Balloons", "https://78.media.tumblr.com/3a5036a07e84567620668771149072b6/tumblr_omg5iaMF9h1w520aqo1_500.jpg"))
     gifts[1].tag.push("In Love", "Celebration", "Good Vibes", "Sympathy", "I'm Sorry", "Friends", "Family", "Him", "Her")
@@ -94,9 +93,6 @@ app.service("giftService", function ($http) {
     gifts.push(new Gift(giftId++, "Disneyland Tickets", "Be with your bae @ the mouse trap", 300, "For Disney lovers!", "Amusement Park Tickets", "https://static1.squarespace.com/static/5764b5749f745637012cad40/t/59baf1854c326d1763405f5c/1505423951734/2017+Disney+Halloween+650x308.jpg"))
     gifts[23].tag.push("In Love", "Celebration", "Good Vibes", "I'm Sorry", "Friends", "Family", "Him", "Her")
 
-
-
-
     // view
     this.getGifts = function () {
         return gifts
@@ -112,12 +108,8 @@ app.service("giftService", function ($http) {
     // add
     this.addGift = function () {
 
-
     }
-
-
-
-
+    
     // delete
     this.deleteGift = function () {
         for (var i = 0; i < gifts.length; i++) {
@@ -133,4 +125,3 @@ app.service("giftService", function ($http) {
 
 })
 
-// 
